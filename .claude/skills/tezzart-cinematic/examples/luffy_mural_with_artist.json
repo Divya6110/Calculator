@@ -1,5 +1,5 @@
 {
- "_about": "Luffy mural film with the artist drawing clips (v1-v3.mp4) between the artwork shots. Put sketch.jpg, paint.jpg, final_clean.jpg, audio.mp4, v1.mp4, v2.mp4, v3.mp4 next to this file.",
+ "_about": "Luffy mural film; artist clips only in the blank-wall section (4-7s), smile close-up framed at the hairline (no slimming on the face). Put sketch.jpg, paint.jpg, final_clean.jpg, audio.mp4, v1.mp4, v2.mp4, v3.mp4 next to this file.",
  "size": [
   1080,
   1920
@@ -46,6 +46,12 @@
    "path": "v3.mp4",
    "squeeze": 0.95,
    "soften": 0.18
+  },
+  "v3face": {
+   "type": "video",
+   "path": "v3.mp4",
+   "squeeze": 1.0,
+   "soften": 0.18
   }
  },
  "shots": [
@@ -67,7 +73,7 @@
   {
    "src": "v1",
    "start": 3.95,
-   "end": 5.45,
+   "end": 5.25,
    "from": [
     390,
     580,
@@ -81,24 +87,9 @@
    "in": 1.0
   },
   {
-   "src": "sketch",
-   "start": 5.3,
-   "end": 6.7,
-   "from": [
-    1119,
-    2278,
-    900
-   ],
-   "to": [
-    1430,
-    2380,
-    860
-   ]
-  },
-  {
    "src": "v2",
-   "start": 6.55,
-   "end": 7.9,
+   "start": 5.1,
+   "end": 6.25,
    "from": [
     370,
     560,
@@ -110,6 +101,37 @@
     580
    ],
    "in": 0.6
+  },
+  {
+   "src": "v3face",
+   "start": 6.1,
+   "end": 6.85,
+   "from": [
+    600,
+    887,
+    430
+   ],
+   "to": [
+    600,
+    880,
+    415
+   ],
+   "in": 6.45
+  },
+  {
+   "src": "sketch",
+   "start": 6.75,
+   "end": 7.9,
+   "from": [
+    1119,
+    2278,
+    900
+   ],
+   "to": [
+    1430,
+    2380,
+    860
+   ]
   },
   {
    "src": "paint",
@@ -199,23 +221,23 @@
     840,
     1060,
     1040
-   ]
+   ],
+   "note": "REVEAL on the drop"
   },
   {
-   "src": "v3",
+   "src": "sketch",
    "start": 15.21,
    "end": 15.7,
    "from": [
-    430,
-    620,
-    640
+    1290,
+    2170,
+    1100
    ],
    "to": [
-    430,
-    610,
-    600
-   ],
-   "in": 2.0
+    1290,
+    2170,
+    1000
+   ]
   },
   {
    "src": "paint",
@@ -233,20 +255,34 @@
    ]
   },
   {
-   "src": "v3",
+   "src": "final",
    "start": 16.16,
-   "end": 17.09,
+   "end": 16.63,
    "from": [
-    520,
-    620,
-    580
+    700,
+    1200,
+    680
    ],
    "to": [
-    530,
-    610,
-    540
+    700,
+    1200,
+    620
+   ]
+  },
+  {
+   "src": "final",
+   "start": 16.63,
+   "end": 17.09,
+   "from": [
+    710,
+    1042,
+    700
    ],
-   "in": 6.3
+   "to": [
+    710,
+    1042,
+    640
+   ]
   },
   {
    "src": "final",
@@ -261,7 +297,8 @@
     857,
     1095,
     1165
-   ]
+   ],
+   "note": "pull back to the complete artwork"
   },
   {
    "src": "logo",
@@ -450,17 +487,27 @@
    0.16
   ],
   [
+   16.63,
+   0.3,
+   0.16
+  ],
+  [
    17.09,
    0.45,
    0.25
   ],
   [
-   5.3,
+   5.1,
    0.25,
    0.18
   ],
   [
-   6.55,
+   6.1,
+   0.25,
+   0.18
+  ],
+  [
+   6.75,
    0.25,
    0.18
   ],

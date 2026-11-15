@@ -20,7 +20,7 @@ The approved reference is the Luffy wall-mural film (`examples/luffy_mural.json`
   - The user rejected thin elegant serif titles ("not cinematic").
   - The user also rejected the heavier variant with light-ray bursts, shockwave rings, sparks, glitch slices and decode text ("before video text only good"). Keep titles at the level in `cinematic_render.py`.
 - **Grade:** gentle S-curve, lifted film blacks, cool shadows and warm highlights, vignette, fine grain. Mild flashes on cuts and hits, and a warm light leak drifting across the reveal.
-- **The artist on camera:** clips of TEZZART drawing go *between* artwork shots (start at the blank wall, mid-sketch, and a turn-to-camera smile near the end). Frame them **upper body up** (arm, pencil, hair, face; no wide full-body shots) and use `"squeeze": 0.95, "soften": 0.18`. She should look like herself, just flattering. Never change her face.
+- **The artist on camera:** her drawing clips go **only in the blank-wall part near the start** (after the opening, before the sketch details), never during titles or the reveal/ending. Frame **upper body up** (arm, pencil, hair; no wide full-body shots); body clips use `"squeeze": 0.95, "soften": 0.18`. She is **conscious of her forehead**: face shots get the frame's top edge at her hairline (film close-up) and **no squeeze** (squeeze makes faces look taller); prefer back / over-the-shoulder views. Never change her face.
 - **No people in frame** when the user asks for it. Build the film from photos of the artwork with camera moves (Ken Burns) instead of clips of the artist.
 - **Clean the photos.** Remove stickers, captions, date text and app overlays (see "Cleaning photos" below).
 
