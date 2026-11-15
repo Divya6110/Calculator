@@ -9,7 +9,7 @@ Paths inside the JSON are resolved relative to the JSON file. "@skill/..." resol
 """
 import json, math, os, subprocess, sys
 import numpy as np
-from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageOps
+from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont, ImageOps
 
 HERE = os.path.dirname(os.path.abspath(__file__)); SKILL = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
@@ -69,8 +69,14 @@ def shot_frame(si, t):
     else:
         if si not in readers: readers[si] = Vid(P(s["path"]), sh.get("in", 0))
         img = readers[si].get(int(round((t - a) * FPS)))
+    sq = s.get("squeeze", 1.0)   # gentle horizontal slimming of people in clips (0.94-0.97 stays natural)
+    if sq != 1.0: img = img.resize((int(img.width * sq), img.height), Image.BICUBIC)
     f0 = sh.get("from") or [img.width / 2, img.height / 2, img.width]; f1 = sh.get("to") or f0
-    return window(img, [u + (v - u) * k for u, v in zip(f0, f1)])
+    if sq != 1.0: f0, f1 = [f0[0] * sq] + list(f0[1:]), [f1[0] * sq] + list(f1[1:])   # camera coords stay in original pixels
+    out = window(img, [u + (v - u) * k for u, v in zip(f0, f1)])
+    soft = s.get("soften", 0)        # flattering bloom: screen a blurred copy over the frame
+    if soft: out = Image.blend(out, ImageChops.screen(out, out.filter(ImageFilter.GaussianBlur(14))), soft)
+    return out
 
 # ---------------- look: film grade ----------------
 yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)

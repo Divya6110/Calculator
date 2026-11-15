@@ -20,6 +20,7 @@ The approved reference is the Luffy wall-mural film (`examples/luffy_mural.json`
   - The user rejected thin elegant serif titles ("not cinematic").
   - The user also rejected the heavier variant with light-ray bursts, shockwave rings, sparks, glitch slices and decode text ("before video text only good"). Keep titles at the level in `cinematic_render.py`.
 - **Grade:** gentle S-curve, lifted film blacks, cool shadows and warm highlights, vignette, fine grain. Mild flashes on cuts and hits, and a warm light leak drifting across the reveal.
+- **The artist on camera:** clips of TEZZART drawing go *between* artwork shots (start at the blank wall, mid-sketch, and a turn-to-camera smile near the end). Frame them **upper body up** (arm, pencil, hair, face; no wide full-body shots) and use `"squeeze": 0.95, "soften": 0.18`. She should look like herself, just flattering. Never change her face.
 - **No people in frame** when the user asks for it. Build the film from photos of the artwork with camera moves (Ken Burns) instead of clips of the artist.
 - **Clean the photos.** Remove stickers, captions, date text and app overlays (see "Cleaning photos" below).
 
@@ -41,7 +42,7 @@ The approved reference is the Luffy wall-mural film (`examples/luffy_mural.json`
 |---|---|
 | `size`, `fps`, `duration` | output; duration usually = audio length |
 | `audio` | file whose audio track is copied unchanged |
-| `sources.<name>` | `{"type":"photo","path":…}`, `{"type":"video","path":…}` (shot gets `"in"` seconds), `{"type":"scene","module":"village"}`; add `"grade": false` to keep original colours |
+| `sources.<name>` | `{"type":"photo","path":…}`, `{"type":"video","path":…}` (shot gets `"in"` seconds), `{"type":"scene","module":"village"}`; add `"grade": false` to keep original colours. Videos also take `"squeeze"` (e.g. 0.95, a gentle natural slimming) and `"soften"` (0.1–0.25 flattering glow) |
 | `shots[]` | `src`, `start`, `end`, `from`/`to` camera `[cx, cy, w]` (eased) |
 | `titles[]` | `style` `slam`/`rise`, `text`, `size`, `in`, `out`, `y`, optional `track`, `strength` (shake 0–1.3); `parts:[{text,in},…]` puts words of one line on separate hits |
 | `cards` | `[start,end]` windows for letterbox bars + darkening |
