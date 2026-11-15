@@ -1,0 +1,51 @@
+{
+  "_about": "The approved TEZZART Luffy mural film (20.7s). Put sketch.jpg, paint.jpg, final_clean.jpg and audio.mp4 next to this file.",
+  "size": [1080, 1920],
+  "fps": 30,
+  "duration": 20.733,
+  "audio": "audio.mp4",
+  "sources": {
+    "village": {"type": "scene", "module": "village"},
+    "sketch":  {"type": "photo", "path": "sketch.jpg"},
+    "paint":   {"type": "photo", "path": "paint.jpg"},
+    "final":   {"type": "photo", "path": "final_clean.jpg"},
+    "logo":    {"type": "photo", "path": "@skill/assets/tezzart_logo.png", "grade": false}
+  },
+  "shots": [
+    {"src": "village", "start": 0.00,  "end": 4.10,  "from": [540, 960, 1080],  "to": [660, 1010, 880],   "note": "establishing shot: seaside village at dawn"},
+    {"src": "sketch",  "start": 3.95,  "end": 5.65,  "from": [2450, 1750, 1150], "to": [1550, 1750, 1450], "note": "blank wall pans onto the sketch"},
+    {"src": "sketch",  "start": 5.50,  "end": 7.05,  "from": [1119, 2278, 900],  "to": [1430, 2380, 860]},
+    {"src": "sketch",  "start": 6.90,  "end": 8.00,  "from": [1490, 1760, 1500], "to": [1490, 1760, 1350]},
+    {"src": "paint",   "start": 7.85,  "end": 9.05,  "from": [1280, 1700, 1050], "to": [1380, 1640, 920]},
+    {"src": "paint",   "start": 8.95,  "end": 10.45, "from": [1500, 2000, 1900], "to": [1500, 2000, 1650]},
+    {"src": "paint",   "start": 10.30, "end": 11.35, "from": [1650, 2800, 950],  "to": [1600, 2750, 820]},
+    {"src": "sketch",  "start": 11.24, "end": 12.55, "from": [1500, 1760, 1500], "to": [1500, 1760, 1400]},
+    {"src": "paint",   "start": 12.30, "end": 13.33, "from": [1500, 1950, 1750], "to": [1500, 1950, 1620]},
+    {"src": "final",   "start": 13.33, "end": 15.21, "from": [857, 1095, 1165],  "to": [840, 1060, 1040],  "note": "REVEAL on the drop"},
+    {"src": "sketch",  "start": 15.21, "end": 15.70, "from": [1290, 2170, 1100], "to": [1290, 2170, 1000]},
+    {"src": "paint",   "start": 15.70, "end": 16.16, "from": [1300, 1800, 1100], "to": [1300, 1800, 1000]},
+    {"src": "final",   "start": 16.16, "end": 16.63, "from": [700, 1200, 680],   "to": [700, 1200, 620]},
+    {"src": "final",   "start": 16.63, "end": 17.09, "from": [710, 1042, 700],   "to": [710, 1042, 640]},
+    {"src": "final",   "start": 17.09, "end": 18.75, "from": [800, 1000, 900],   "to": [857, 1095, 1165], "note": "pull back to the complete artwork"},
+    {"src": "logo",    "start": 18.53, "end": 20.80, "from": [540, 960, 1080],   "to": [540, 960, 1040]}
+  ],
+  "titles": [
+    {"style": "rise", "text": "I'M", "size": 84, "in": 0.33, "out": 3.95, "y": 760},
+    {"style": "slam", "size": 210, "out": 3.95, "y": 905, "strength": 0.6,
+     "parts": [{"text": "MONKEY", "in": 1.63}, {"text": "D.", "in": 2.14}]},
+    {"style": "slam", "text": "LUFFY", "size": 360, "in": 2.55, "out": 3.95, "y": 1150, "track": 10, "strength": 1.0},
+    {"style": "rise", "text": "NICE TO MEET YOU", "size": 66, "in": 3.07, "out": 3.95, "y": 1340, "track": 24},
+    {"style": "rise", "text": "I'M", "size": 84, "in": 9.47, "out": 11.20, "y": 790},
+    {"style": "slam", "text": "LUFFY", "size": 380, "in": 9.91, "out": 11.20, "y": 990, "track": 10, "strength": 1.0},
+    {"style": "rise", "text": "THE FUTURE", "size": 76, "in": 11.24, "out": 13.30, "y": 690, "track": 24},
+    {"style": "slam", "text": "KING", "size": 270, "in": 11.80, "out": 13.30, "y": 850, "strength": 0.7},
+    {"style": "rise", "text": "OF", "size": 76, "in": 12.28, "out": 13.30, "y": 1000, "track": 24},
+    {"style": "slam", "text": "PIRATES", "size": 270, "in": 12.82, "out": 13.30, "y": 1150, "strength": 0.9}
+  ],
+  "cards": [[0.0, 3.95], [9.40, 11.22], [11.22, 13.31]],
+  "flashes": [[1.63, 0.22, 0.14], [2.14, 0.22, 0.14], [2.55, 0.45, 0.22], [9.91, 0.45, 0.22], [11.80, 0.30, 0.18],
+              [12.82, 0.40, 0.20], [3.95, 0.40, 0.28], [13.33, 0.85, 0.40], [15.21, 0.30, 0.16], [15.70, 0.30, 0.16],
+              [16.16, 0.30, 0.16], [16.63, 0.30, 0.16], [17.09, 0.45, 0.25]],
+  "light_leak": [13.33, 15.3],
+  "end_card": {"text": "PRESENTED BY", "text_in": 18.85, "text_y": 300, "text_size": 58}
+}
