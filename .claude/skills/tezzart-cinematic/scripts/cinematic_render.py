@@ -68,7 +68,7 @@ def shot_frame(si, t):
     elif s["type"] == "scene": img = SRC[sh["src"]].scene(t - a)
     else:
         if si not in readers: readers[si] = Vid(P(s["path"]), sh.get("in", 0))
-        img = readers[si].get(int(round((t - a) * FPS)))
+        img = readers[si].get(int(round((t - a) * FPS * sh.get("speed", 1.0))))   # speed < 1 = slow motion
     sq = s.get("squeeze", 1.0)   # gentle horizontal slimming of people in clips (0.94-0.97 stays natural)
     if sq != 1.0: img = img.resize((int(img.width * sq), img.height), Image.BICUBIC)
     f0 = sh.get("from") or [img.width / 2, img.height / 2, img.width]; f1 = sh.get("to") or f0

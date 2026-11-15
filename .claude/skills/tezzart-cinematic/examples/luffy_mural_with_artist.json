@@ -1,5 +1,5 @@
 {
- "_about": "Luffy mural film; artist clips only in the blank-wall section (4-7s), smile close-up framed at the hairline (no slimming on the face). Put sketch.jpg, paint.jpg, final_clean.jpg, audio.mp4, v1.mp4, v2.mp4, v3.mp4 next to this file.",
+ "_about": "Luffy mural film; artist from behind (over-the-shoulder, hand close-up) + ONE slow-motion smile close-up framed at the hairline, all in the blank-wall section. Put sketch.jpg, paint.jpg, final_clean.jpg, audio.mp4, v1.mp4, v3.mp4 next to this file.",
  "size": [
   1080,
   1920
@@ -35,17 +35,17 @@
    "squeeze": 0.95,
    "soften": 0.18
   },
-  "v2": {
-   "type": "video",
-   "path": "v2.mp4",
-   "squeeze": 0.95,
-   "soften": 0.18
-  },
   "v3": {
    "type": "video",
    "path": "v3.mp4",
    "squeeze": 0.95,
    "soften": 0.18
+  },
+  "v1hand": {
+   "type": "video",
+   "path": "v1.mp4",
+   "squeeze": 1.0,
+   "soften": 0.22
   },
   "v3face": {
    "type": "video",
@@ -71,41 +71,41 @@
    ]
   },
   {
-   "src": "v1",
+   "src": "v3",
    "start": 3.95,
-   "end": 5.25,
+   "end": 5.0,
    "from": [
-    390,
-    580,
-    640
+    400,
+    640,
+    660
+   ],
+   "to": [
+    420,
+    620,
+    600
+   ],
+   "in": 1.6
+  },
+  {
+   "src": "v3",
+   "start": 4.9,
+   "end": 5.55,
+   "from": [
+    380,
+    660,
+    560
    ],
    "to": [
     400,
-    560,
-    580
+    640,
+    500
    ],
-   "in": 1.0
-  },
-  {
-   "src": "v2",
-   "start": 5.1,
-   "end": 6.25,
-   "from": [
-    370,
-    560,
-    640
-   ],
-   "to": [
-    380,
-    540,
-    580
-   ],
-   "in": 0.6
+   "in": 3.5
   },
   {
    "src": "v3face",
-   "start": 6.1,
-   "end": 6.85,
+   "start": 5.45,
+   "end": 6.2,
    "from": [
     600,
     887,
@@ -116,7 +116,24 @@
     880,
     415
    ],
-   "in": 6.45
+   "in": 6.5,
+   "speed": 0.45
+  },
+  {
+   "src": "v1hand",
+   "start": 6.1,
+   "end": 6.85,
+   "from": [
+    190,
+    700,
+    370
+   ],
+   "to": [
+    205,
+    690,
+    340
+   ],
+   "in": 2.0
   },
   {
    "src": "sketch",
@@ -497,7 +514,17 @@
    0.25
   ],
   [
-   5.1,
+   7.75,
+   0.25,
+   0.18
+  ],
+  [
+   4.9,
+   0.25,
+   0.18
+  ],
+  [
+   5.45,
    0.25,
    0.18
   ],
@@ -508,11 +535,6 @@
   ],
   [
    6.75,
-   0.25,
-   0.18
-  ],
-  [
-   7.75,
    0.25,
    0.18
   ]

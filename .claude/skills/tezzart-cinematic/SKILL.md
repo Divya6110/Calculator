@@ -43,7 +43,7 @@ The approved reference is the Luffy wall-mural film (`examples/luffy_mural.json`
 | `size`, `fps`, `duration` | output; duration usually = audio length |
 | `audio` | file whose audio track is copied unchanged |
 | `sources.<name>` | `{"type":"photo","path":…}`, `{"type":"video","path":…}` (shot gets `"in"` seconds), `{"type":"scene","module":"village"}`; add `"grade": false` to keep original colours. Videos also take `"squeeze"` (e.g. 0.95, a gentle natural slimming) and `"soften"` (0.1–0.25 flattering glow) |
-| `shots[]` | `src`, `start`, `end`, `from`/`to` camera `[cx, cy, w]` (eased) |
+| `shots[]` | `src`, `start`, `end`, `from`/`to` camera `[cx, cy, w]` (eased); video shots also take `in` (source seconds) and `speed` (0.5 = slow motion, e.g. to hold a smile) |
 | `titles[]` | `style` `slam`/`rise`, `text`, `size`, `in`, `out`, `y`, optional `track`, `strength` (shake 0–1.3); `parts:[{text,in},…]` puts words of one line on separate hits |
 | `cards` | `[start,end]` windows for letterbox bars + darkening |
 | `flashes` | `[time, amount, decay_s]` white flashes (hits, cuts, reveal) |
